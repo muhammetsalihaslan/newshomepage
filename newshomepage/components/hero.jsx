@@ -12,15 +12,19 @@ const Hero = () => {
             height={80}
           />
         </div>
-        <div className="flex  w-[650px]">
-          <h1 className="flex-1">The Bright Future of Web 3.0? </h1>
+        <div className="flex  w-[650px] mt-5">
+          <h1 className="flex-1 text-5xl font-bold mt-5">
+            The Bright Future of Web 3.0?{" "}
+          </h1>
           <div className="flex-1">
-            <p>
+            <p className="text-sm text-slate-400 mt-2">
               We dive into the nextevolution of the web that claims to put the
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <button>READ MORE</button>
+            <button className="bg-black p-2 text-white w-[150px] mt-[2rem] font-semibold hover:bg-orange-600 transition duration-150 ">
+              READ MORE
+            </button>
           </div>
         </div>
       </div>
