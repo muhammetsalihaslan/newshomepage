@@ -8,12 +8,22 @@ const Navbar = () => {
       <div>
         <Image src="./images/logo.svg" width={65} height={40} />
       </div>
-      <div>
-        <Link href="http://">Home</Link>
-        <Link href="http://">New</Link>
-        <Link href="http://">Popular</Link>
-        <Link href="http://">Trending</Link>
-        <Link href="http://">Categories</Link>
+      <div className="flex gap-x-5 text-slate-400">
+        <Link href="http://" className=" hover:text-orange-600">
+          Home
+        </Link>
+        <Link href="http://" className=" hover:text-orange-600">
+          New
+        </Link>
+        <Link href="http://" className=" hover:text-orange-600">
+          Popular
+        </Link>
+        <Link href="http://" className=" hover:text-orange-600">
+          Trending
+        </Link>
+        <Link href="http://" className=" hover:text-orange-600">
+          Categories
+        </Link>
       </div>
     </div>
   );
