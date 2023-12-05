@@ -1,10 +1,9 @@
-"use client";
 import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
-    <div className="mt-12 flex flex-wrap sm:flex-nowrap">
+    <div className="mt-12 flex justify-center lg:justify-start flex-wrap sm:flex-nowrap">
       <div>
         <div className="w-[300px] lg:w-[550px]  xl:w-[650px] ">
           <Image

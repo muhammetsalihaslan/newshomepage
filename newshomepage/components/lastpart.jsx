@@ -3,7 +3,7 @@ import React from "react";
 
 const LastPart = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-y-6 mt-10 h-[140px]">
+    <div className="flex flex-col  md:flex-row gap-y-6 mt-10 h-[140px]">
       <div className="flex-1 flex gap-x-6 md:gap-x-0 ">
         <Image src="/images/image-retro-pcs.jpg" width={100} height={140} />
 
