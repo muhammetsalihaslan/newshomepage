@@ -1,18 +1,26 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
-    <div className="mt-12 flex ">
+    <div className="mt-12 flex flex-wrap sm:flex-nowrap">
       <div>
-        <div>
+        <div className="w-[300px] lg:w-[550px]  xl:w-[650px] ">
           <Image
             src="/images/image-web-3-desktop.jpg"
             width={650}
             height={80}
+            className="hidden sm:block"
+          />
+          <Image
+            src="/images/image-web-3-mobile.jpg"
+            width={650}
+            height={80}
+            className="block sm:hidden"
           />
         </div>
-        <div className="flex  w-[650px] mt-5">
+        <div className="flex  w-[300px] lg:w-[550px]  xl:w-[650px] mt-5">
           <h1 className="flex-1 text-5xl font-bold mt-5">
             The Bright Future of Web 3.0?{" "}
           </h1>
@@ -28,7 +36,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="bg-black ms-5 w-[490px]">
+      <div className="bg-black sm:ms-5 w-[300px] xl:w-[490px] mt-[2rem] sm:mt-0">
         <div>
           <h1 className="text-orange-300 text-2xl font-semibold mt-5 ml-3 p-2">
             New
