@@ -18,14 +18,14 @@ const Navbar = () => {
         <div>
           {" "}
           {isMenuOpen ? (
-            <div className=" bg-white w-1/2 h-screen fixed top-0 right-0 overflow-y-auto transition transform duration-200 ease-in-out">
+            <div className="bg-gradient-to-r from-transparent via-white to-white w-screen h-screen fixed top-0 right-0 overflow-y-auto transition transform duration-200 ease-in-out">
               <button
-                className="flex justify-end text-3xl font-bold mt-10 ms-[12rem]"
+                className="flex justify-end text-3xl font-bold mt-10 ms-[28rem]"
                 onClick={handleClick}
               >
                 X
               </button>
-              <div className="flex flex-col gap-y-6 mt-5 ms-5 font-semibold text-slate-400">
+              <div className="flex flex-col gap-y-6 mt-5  ms-[15rem] font-semibold text-slate-400  ">
                 <Link href="http://" className=" hover:text-orange-600">
                   Home
                 </Link>
