@@ -14,12 +14,15 @@ const Navbar = () => {
       <div>
         <Image src="./images/logo.svg" width={65} height={40} />
       </div>
-      <div className="sm:hidden cursor-pointer">
-        <div onClick={handleClick}>
+      <div className="sm:hidden">
+        <div>
           {" "}
           {isMenuOpen ? (
             <div className=" bg-white w-1/2 h-screen fixed top-0 right-0 overflow-y-auto transition transform duration-200 ease-in-out">
-              <button className="flex justify-end text-3xl font-bold mt-10">
+              <button
+                className="flex justify-end text-3xl font-bold mt-10 ms-[12rem]"
+                onClick={handleClick}
+              >
                 X
               </button>
               <div className="flex flex-col gap-y-6 mt-5 ms-5 font-semibold text-slate-400">
@@ -41,7 +44,13 @@ const Navbar = () => {
               </div>
             </div>
           ) : (
-            <Image src="./images/icon-menu.svg" width={65} height={40} />
+            <Image
+              src="./images/icon-menu.svg"
+              width={65}
+              height={40}
+              className="cursor-pointer"
+              onClick={handleClick}
+            />
           )}
         </div>
       </div>
